@@ -30,3 +30,7 @@ namespace ClassObjectCreation
         }
     }
 }
+/* output 
+ Name of student is Mrunmayee
+and id is 101
+*/
