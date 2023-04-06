@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Constructor1
+{
+    class Car
+    {
+        public string model;
+        public int price;
+        public string color;
+
+        //constructor creation in class itself
+        public Car(string modelname)
+        {
+            model = modelname;
+            price = 600000;
+            color = "red";
+        }
+
+
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //object
+            Car c1 = new Car("BMW");
+            Console.WriteLine("Model is ," + c1.model + "\tPrice is, " + c1.price + "\tAnd color is. " + c1.color);
+            Console.ReadLine();
+
+
+        }
+    }
+}
+
+/* output
+ * Model is BMW, Price is 600000 .And color is red.
+ */
