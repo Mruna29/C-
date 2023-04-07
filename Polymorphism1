@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Encapsulation1
+{
+    class Animal
+    {
+        public  virtual void Sound()
+        {
+            Console.WriteLine("The animal sounds are=");
+        }
+    }
+
+    class Pig : Animal
+    {
+        public override void Sound()
+        {
+            Console.WriteLine("Pig sounds wee wee");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public override void Sound()
+        {
+            Console.WriteLine("Dog sounds bow bow");
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Animal A1 = new Animal();
+            Animal A2 = new Pig();
+            Animal A3 = new Dog();
+
+            A1.Sound();
+            A2.Sound();
+            A3.Sound();
+
+            Console.ReadLine();
+        }
+    }
+}
+/*output
+The animal sounds are=
+Pig sounds wee wee
+Dog sounds bow bow
+*/
